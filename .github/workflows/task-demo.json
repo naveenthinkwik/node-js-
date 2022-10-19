@@ -9,19 +9,13 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/task-demo",
+          "awslogs-group": "/ecs/task1",
           "awslogs-region": "ap-south-1",
           "awslogs-stream-prefix": "ecs"
         }
       },
       "entryPoint": null,
-      "portMappings": [
-        {
-          "hostPort": 80,
-          "protocol": "tcp",
-          "containerPort": 80
-        }
-      ],
+      "portMappings": [],
       "command": null,
       "linuxParameters": null,
       "cpu": 0,
@@ -64,8 +58,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:332867570114:task-definition/task-demo:1",
-  "family": "task-demo",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:332867570114:task-definition/task1:1",
+  "family": "task1",
   "requiresAttributes": [
     {
       "targetId": null,
